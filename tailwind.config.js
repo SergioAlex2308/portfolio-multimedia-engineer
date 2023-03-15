@@ -4,6 +4,10 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'header':['Bebas Neue', 'cursive'],
+      'body':['Roboto Condensed', 'sans-serif'],
+    },
     colors: {
       'blue': {
         100: '#17F0FF',
