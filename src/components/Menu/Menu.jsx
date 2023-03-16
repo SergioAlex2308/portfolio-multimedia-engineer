@@ -2,7 +2,7 @@ import React from "react";
 
 function Menu() {
   return (
-    <nav className="flex justify-between items-center px-10 py-4 bg-gray-500">
+    <nav className="flex sticky top-0 z-30 justify-between items-center px-10 py-4 bg-gray-500">
       <div className="h-12 w-12 border-2 border-blue-300 rounded-full grid place-items-center">
         <span className="text-sm text-center text-gray-300">SM</span>
       </div>

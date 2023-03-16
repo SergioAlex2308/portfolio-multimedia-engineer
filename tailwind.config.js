@@ -27,7 +27,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'photo-main': "url('./assets/Images/photo-background.jpg')",
+        'photo-main-large': "url('./assets/Images/photo-background.jpg')",
+        'photo-main-small': "url('./assets/Images/photo-background-small.jpg')",
       }
     }
   },
