@@ -6,7 +6,7 @@ import { Studies } from "./components/Studies/Studies";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App overflow-x-hidden">
       <Menu />
       <FrontPage />
       <Skills />
