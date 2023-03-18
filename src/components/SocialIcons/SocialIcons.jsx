@@ -1,8 +1,8 @@
 import React from "react";
-import behance from "../../assets/Icons/Contact_Icon-01.png";
-import linkedin from "../../assets/Icons/Contact_Icon-02.png";
-import github from "../../assets/Icons/Contact_Icon-03.png";
-import instagram from "../../assets/Icons/Contact_Icon-04.png";
+import behance from "../../assets/Icons/Contact/Contact_Icon-01.png";
+import linkedin from "../../assets/Icons/Contact/Contact_Icon-02.png";
+import github from "../../assets/Icons/Contact/Contact_Icon-03.png";
+import instagram from "../../assets/Icons/Contact/Contact_Icon-04.png";
 
 function SocialIcons() {
 

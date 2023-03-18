@@ -1,6 +1,7 @@
 import React from "react";
 import { Header } from "../Header/Header";
 import { CourseItem } from "../CourseItem/CourseItem";
+import { Divider } from "../Divider/Divider";
 
 function Studies() {
   const title = "Formación";
@@ -59,7 +60,7 @@ function Studies() {
     },
   ];
   return (
-    <section className="h-screen bg-gray-500 flex flex-col gap-20 items-center">
+    <section className="h-screen bg-gray-500 flex flex-col justify-between items-center">
       <Header title={title} />
       <div className="studies flex flex-col px-6 gap-10 self-center">
         <div className="studies_career flex justify-start items-center">
@@ -124,6 +125,7 @@ function Studies() {
           ))}
         </div>
       </div>
+      <Divider />
     </section>
   );
 }
