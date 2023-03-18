@@ -1,6 +1,7 @@
 import React from "react";
 import { Header } from "../Header/Header";
 import { Divider } from "../Divider/Divider";
+import { Tooltip } from "@material-tailwind/react";
 // Design SVG
 import { ReactComponent as AfterEffects } from "../../assets/Icons/Programs/AfterEffects.svg";
 import { ReactComponent as Figma } from "../../assets/Icons/Programs/Figma.svg";
@@ -19,29 +20,134 @@ import { ReactComponent as Vue } from "../../assets/Icons/Programs/Vue.svg";
 function Skills() {
   const title = "Habilidades";
 
+  const styleLogo =
+    "w-14 grayscale transition ease-in-out hover:grayscale-0 hover:scale-110";
+
   return (
-    <section className="skill h-screen bg-gray-500 font-header text-3xl text-gray-100 flex flex-col gap-20 justify-between items-center">
+    <section className="skill h-screen bg-gray-500 font-header text-3xl text-gray-100 flex flex-col justify-between">
       <Header title={title} />
       <div className="skill_design px-14">
-        <h3 className="mb-8">Diseño</h3>
+        <h3 className="mb-14">Diseño</h3>
         <div className="skill_desing_logos w-full grid grid-cols-3 grid-rows-2 place-items-center gap-5">
-          <Figma className="w-14 grayscale hover:grayscale-0" />
-          <AfterEffects className="w-14 grayscale hover:grayscale-0" />
-          <Illustrator className="w-14 grayscale hover:grayscale-0" />
-          <Photoshop className="w-14 grayscale hover:grayscale-0" />
-          <Lightroom className="w-14 grayscale hover:grayscale-0" />
-          <Premier className="w-14 grayscale hover:grayscale-0" />
+          <Tooltip
+            content="Figma"
+            animate={{
+              mount: { scale: 1, y: -5 },
+              unmount: { scale: 0, y: 25 },
+            }}
+          >
+            <Figma className={styleLogo} />
+          </Tooltip>
+          <Tooltip
+            content="After Effects"
+            animate={{
+              mount: { scale: 1, y: -5 },
+              unmount: { scale: 0, y: 25 },
+            }}
+          >
+            <AfterEffects className={styleLogo} />
+          </Tooltip>
+          <Tooltip
+            content="Illustrator"
+            animate={{
+              mount: { scale: 1, y: -5 },
+              unmount: { scale: 0, y: 25 },
+            }}
+          >
+            <Illustrator className={styleLogo} />
+          </Tooltip>
+          <Tooltip
+            content="Photoshop"
+            placement="bottom"
+            animate={{
+              mount: { scale: 1, y: 5 },
+              unmount: { scale: 0, y: -25 },
+            }}
+          >
+            <Photoshop className={styleLogo} />
+          </Tooltip>
+          <Tooltip
+            content="Lightroom"
+            placement="bottom"
+            animate={{
+              mount: { scale: 1, y: 5 },
+              unmount: { scale: 0, y: -25 },
+            }}
+          >
+            <Lightroom className={styleLogo} />
+          </Tooltip>
+          <Tooltip
+            content="Premier Pro"
+            placement="bottom"
+            animate={{
+              mount: { scale: 1, y: 5 },
+              unmount: { scale: 0, y: -25 },
+            }}
+          >
+            <Premier className={styleLogo} />
+          </Tooltip>
         </div>
       </div>
-      <div className="skill_dev px-14">
-        <h3 className="mb-8">Desarrollo</h3>
+      <div className="skill_dev px-14 mb-12">
+        <h3 className="mb-14">Desarrollo</h3>
         <div className="skill_dev_logos w-full grid grid-cols-3 grid-rows-2 place-items-center gap-5">
-          <Git className="w-14 grayscale hover:grayscale-0" />
-          <Javascript className="w-14 grayscale hover:grayscale-0" />
-          <ReactLogo className="w-14 grayscale hover:grayscale-0" />
-          <Sass className="w-14 grayscale hover:grayscale-0" />
-          <Tailwind className="w-14 grayscale hover:grayscale-0" />
-          <Vue className="w-14 grayscale hover:grayscale-0" />
+          <Tooltip
+            content="Git"
+            animate={{
+              mount: { scale: 1, y: -5 },
+              unmount: { scale: 0, y: 25 },
+            }}
+          >
+            <Git className={styleLogo} />
+          </Tooltip>
+          <Tooltip
+            content="Javascript"
+            animate={{
+              mount: { scale: 1, y: -5 },
+              unmount: { scale: 0, y: 25 },
+            }}
+          >
+            <Javascript className={styleLogo} />
+          </Tooltip>
+          <Tooltip
+            content="React JS"
+            animate={{
+              mount: { scale: 1, y: -5 },
+              unmount: { scale: 0, y: 25 },
+            }}
+          >
+            <ReactLogo className={styleLogo} />
+          </Tooltip>
+          <Tooltip
+            content="Sass"
+            placement="bottom"
+            animate={{
+              mount: { scale: 1, y: 5 },
+              unmount: { scale: 0, y: -25 },
+            }}
+          >
+            <Sass className={styleLogo} />
+          </Tooltip>
+          <Tooltip
+            content="Tailwind CSS"
+            placement="bottom"
+            animate={{
+              mount: { scale: 1, y: 5 },
+              unmount: { scale: 0, y: -25 },
+            }}
+          >
+            <Tailwind className={styleLogo} />
+          </Tooltip>
+          <Tooltip
+            content="Vue JS"
+            placement="bottom"
+            animate={{
+              mount: { scale: 1, y: 5 },
+              unmount: { scale: 0, y: -25 },
+            }}
+          >
+            <Vue className={styleLogo} />
+          </Tooltip>
         </div>
       </div>
       <Divider />

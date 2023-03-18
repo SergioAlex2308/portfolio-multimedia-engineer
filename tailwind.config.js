@@ -1,12 +1,16 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+module.exports = withMT({
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    "path-to-your-node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
+    "path-to-your-node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     fontFamily: {
-      'header':['Bebas Neue', 'cursive'],
-      'body':['Roboto Condensed', 'sans-serif'],
+      'header': ['Bebas Neue', 'cursive'],
+      'body': ['Roboto Condensed', 'sans-serif'],
     },
     colors: {
       'blue': {
@@ -25,6 +29,19 @@ module.exports = {
         600: '#101010',
       }
     },
+    screens: {
+      'phone': '375px',
+      // => @media (min-width: 640px) { ... }
+
+      'tablet': '768px',
+      // => @media (min-width: 640px) { ... }
+
+      'laptop': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'desktop': '1920px',
+      // => @media (min-width: 1280px) { ... }
+    },
     extend: {
       backgroundImage: {
         'photo-main-large': "url('./assets/Images/Background/photo-background.jpg')",
@@ -33,4 +50,4 @@ module.exports = {
     }
   },
   plugins: [],
-}
+})

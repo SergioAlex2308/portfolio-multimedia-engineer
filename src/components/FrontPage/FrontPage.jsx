@@ -7,7 +7,7 @@ function FrontPage() {
 
   return (
     <section className="h-screen relative">
-      <div className="main grid align-center justify-items-start items-end h-full z-10 max-sm:bg-photo-main-small bg-cover bg-no-repeat bg-center">
+      <div className="main grid align-center justify-items-start items-end h-full z-10 bg-photo-main-small tablet:bg-photo-main-large bg-cover bg-no-repeat bg-center">
         <div className="main_overlay absolute w-full h-full bg-gray-600 opacity-50"></div>
         <div className="main_info pl-10 z-20">
           <div className="main_info_text font-header text-left">
