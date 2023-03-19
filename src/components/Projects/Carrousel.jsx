@@ -46,6 +46,7 @@ function Carrousel() {
           <CardProject
             key={p.title}
             title={p.title}
+            date={p.date}
             description={p.description}
             url={p.url}
             src={p.img.src}
