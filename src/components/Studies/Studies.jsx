@@ -11,52 +11,52 @@ function Studies() {
     {
       name: "Curso Frontend Developer",
       img: `Course_frontend.webp`,
-      url: `${urlBase}/2477-course/diploma/detalle/`
+      url: `${urlBase}/2477-course/diploma/detalle/`,
     },
     {
       name: "Curso Profesional de JavaScript",
       img: `Course_JavaScript.webp`,
-      url: `${urlBase}/1642-course/diploma/detalle/`
+      url: `${urlBase}/1642-course/diploma/detalle/`,
     },
     {
       name: "Curso Librerias JavaScript",
       img: `Course_Libraries.avif`,
-      url: `${urlBase}/2239-frameworks-javascript/diploma/detalle/`
+      url: `${urlBase}/2239-frameworks-javascript/diploma/detalle/`,
     },
     {
       name: "Curso Introducción a ReactJS",
       img: `Course_IntroReact.avif`,
-      url: `${urlBase}/2444-react/diploma/detalle/`
+      url: `${urlBase}/2444-react/diploma/detalle/`,
     },
     {
       name: "Curso Patrones de Render",
       img: `Course_RenderPatterns.avif`,
-      url: `${urlBase}/2457-course/diploma/detalle/`
+      url: `${urlBase}/2457-course/diploma/detalle/`,
     },
     {
       name: "Curso Estado en ReactJS",
       img: `Course_RenderPatterns.avif`,
-      url: `${urlBase}/2597-react-estado/diploma/detalle/`
+      url: `${urlBase}/2597-react-estado/diploma/detalle/`,
     },
     {
       name: "Curso React Router",
       img: `Course_ReactRouter.png`,
-      url: `${urlBase}/2444-react/diploma/detalle/`
+      url: `${urlBase}/2444-react/diploma/detalle/`,
     },
     {
       name: "Curso Básico VueJS 2",
       img: `Course_Vue2.avif`,
-      url: `${urlBase}/1752-vuejs2/diploma/detalle/`
+      url: `${urlBase}/1752-vuejs2/diploma/detalle/`,
     },
     {
       name: "Curso Figma avanzado",
       img: `Course_Figma.avif`,
-      url: `${urlBase}/2582-figma-avanzado/diploma/detalle/`
+      url: `${urlBase}/2582-figma-avanzado/diploma/detalle/`,
     },
     {
       name: "Curso Diseño de interfaces",
       img: `Course_UIDesign.avif`,
-      url: `${urlBase}/1493-course/diploma/detalle/`
+      url: `${urlBase}/1493-course/diploma/detalle/`,
     },
   ];
   return (
@@ -121,7 +121,12 @@ function Studies() {
         </div>
         <div className="studies_courses_list grid place-items-start pl-4">
           {courses.map((course) => (
-            <CourseItem img={course.img} name={course.name} url={course.url} />
+            <CourseItem
+              key={course.name}
+              img={course.img}
+              name={course.name}
+              url={course.url}
+            />
           ))}
         </div>
       </div>

@@ -4,6 +4,8 @@ import { SocialIcons } from "../SocialIcons/SocialIcons";
 
 function FrontPage() {
   const label = "CV";
+  const icon = false;
+  const url = 'https://swiperjs.com/demos';
 
   return (
     <section className="h-screen relative">
@@ -16,7 +18,7 @@ function FrontPage() {
             <h5 className="text-base text-gray-100">Ingeniero en Multimedia</h5>
           </div>
           <div className="main_button w-20 h-7">
-            <Button label={label} />
+            <Button label={label} icon={icon} url={url} />
           </div>
         </div>
         <div className="main_contact pl-10 w-full py-9 z-20">
