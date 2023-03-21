@@ -11,7 +11,6 @@ import "swiper/css/pagination";
 import { Pagination, Mousewheel, Keyboard, EffectCoverflow } from "swiper";
 
 function Carrousel() {
-  console.log(Projects);
 
   return (
     <Swiper
@@ -20,7 +19,7 @@ function Carrousel() {
       mousewheel={true}
       keyboard={true}
       loop
-      slidesPerView={2}
+      slidesPerView={1}
       spaceBetween={30}
       centeredSlides={true}
       pagination={{
@@ -31,7 +30,7 @@ function Carrousel() {
         stretch: 0,
         depth: 100,
         modifier: 2.5,
-        slideShadows: true,
+        slideShadows: false,
       }}
       modules={[
         /* Navigation, */ Pagination,
