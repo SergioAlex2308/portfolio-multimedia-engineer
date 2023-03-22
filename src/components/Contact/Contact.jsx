@@ -9,7 +9,7 @@ function Contact() {
   const icon = false;
   const label = "Enviar";
   return (
-    <section className="h-screen bg-gray-500 flex flex-col justify-between items-center pb-14">
+    <section id="contact" className="snap-center h-screen bg-gray-500 flex flex-col justify-between items-center pb-14">
       <Header title={title} />
       <div className="contact flex flex-col gap-y-14 items-center">
         <div className="contact_info flex items-center px-12">

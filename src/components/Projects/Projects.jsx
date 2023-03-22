@@ -6,7 +6,7 @@ import { Divider } from "../Divider/Divider";
 function Projects() {
   const title = "Proyectos";
   return (
-    <section className="h-screen bg-gray-500 flex flex-col justify-between">
+    <section id="projects" className="snap-center h-screen bg-gray-500 flex flex-col justify-between">
       <Header title={title} />
       <div className="h-full w-full flex justify-items-end">
         <Carrousel />

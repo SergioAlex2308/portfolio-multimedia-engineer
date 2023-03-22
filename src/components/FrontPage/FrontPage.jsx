@@ -8,7 +8,7 @@ function FrontPage() {
   const url = 'https://swiperjs.com/demos';
 
   return (
-    <section className="h-screen relative">
+    <section id="home" className="h-screen snap-center scroll-mt-20 relative">
       <div className="main grid align-center justify-items-start items-end h-full z-10 bg-photo-main-small tablet:bg-photo-main-large bg-cover bg-no-repeat bg-center">
         <div className="main_overlay absolute w-full h-full bg-gray-600 opacity-50"></div>
         <div className="main_info pl-10 z-20">

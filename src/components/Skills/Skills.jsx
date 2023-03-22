@@ -24,7 +24,7 @@ function Skills() {
     "w-14 grayscale transition ease-in-out hover:grayscale-0 hover:scale-110";
 
   return (
-    <section className="skill h-screen bg-gray-500 font-header text-3xl text-gray-100 flex flex-col justify-between">
+    <section id="skills" className="skill snap-center h-screen bg-gray-500 font-header text-3xl text-gray-100 flex flex-col justify-between">
       <Header title={title} />
       <div className="skill_design px-14">
         <h3 className="mb-14">Diseño</h3>

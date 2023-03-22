@@ -6,7 +6,7 @@ import { Header } from "../Header/Header";
 function About() {
   const title = "Sobre mí";
   return (
-    <section className="about h-screen bg-gray-500 font-header text-3xl text-gray-100 flex flex-col justify-between">
+    <section id="aboutme" className="about snap-center h-screen bg-gray-500 font-header text-3xl text-gray-100 flex flex-col justify-between">
       <Header title={title} />
       <div className="about_info flex flex-col h-full items-center justify-between px-6">
         <div className="about_photo w-2/5">

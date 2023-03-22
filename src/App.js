@@ -16,7 +16,7 @@ function App() {
   const { openMenu, setOpenMenu } = useMenuContext();
 
   return (
-    <div className="App overflow-x-hidden">
+    <div className="App max-h-screen scroll-smooth overflow-y-scroll overflow-x-hidden snap-y snap-proximity">
       <NavMenu setOpenMenu={setOpenMenu} />
       {openMenu && (
         <Menu>

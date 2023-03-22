@@ -1,6 +1,6 @@
 import React from "react";
 import { Header } from "../Header/Header";
-import { CourseItem } from "../CourseItem/CourseItem";
+import { CourseItem } from "./CourseItem";
 import { Divider } from "../Divider/Divider";
 
 function Studies() {
@@ -60,7 +60,7 @@ function Studies() {
     },
   ];
   return (
-    <section className="h-screen bg-gray-500 flex flex-col justify-between items-center">
+    <section id="studies" className="snap-center h-screen bg-gray-500 flex flex-col justify-between items-center">
       <Header title={title} />
       <div className="studies flex flex-col px-6 gap-10 self-center">
         <div className="studies_career flex justify-start items-center">
@@ -119,7 +119,7 @@ function Studies() {
             </p>
           </div>
         </div>
-        <div className="studies_courses_list grid place-items-start pl-4">
+        <div className="studies_courses_list h-80 overflow-auto grid place-items-start pl-4">
           {courses.map((course) => (
             <CourseItem
               key={course.name}
