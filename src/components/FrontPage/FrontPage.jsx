@@ -1,11 +1,12 @@
 import React from "react";
-import { Button } from "../Button/Button";
+import { Button } from "components/Button/Button"
 import { SocialIcons } from "../SocialIcons/SocialIcons";
 
 function FrontPage() {
   const label = "CV";
   const icon = false;
-  const url = 'https://swiperjs.com/demos';
+  const url = '../../assets/Pdf/CV_SergioMartínez.pdf';
+  const download = true;
 
   return (
     <section id="home" className="h-screen snap-center scroll-mt-20 relative">
@@ -18,7 +19,7 @@ function FrontPage() {
             <h5 className="text-base text-gray-100">Ingeniero en Multimedia</h5>
           </div>
           <div className="main_button w-20 h-7">
-            <Button label={label} icon={icon} url={url} />
+            <Button label={label} icon={icon} url={url} download={download} />
           </div>
         </div>
         <div className="main_contact pl-10 w-full py-9 z-20">

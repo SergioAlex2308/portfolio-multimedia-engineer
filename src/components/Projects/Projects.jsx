@@ -8,7 +8,7 @@ function Projects() {
   return (
     <section id="projects" className="snap-center h-screen bg-gray-500 flex flex-col justify-between">
       <Header title={title} />
-      <div className="h-full w-full flex justify-items-end">
+      <div className="h-full w-full flex px-2">
         <Carrousel />
       </div>
       <Divider />

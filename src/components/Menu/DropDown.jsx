@@ -4,16 +4,16 @@ function DropDown({ setOpenMenu }) {
   const classElementList =
     "font-header text-gray-100 text-6xl hover:text-blue-300 hover:underline";
 
-  const onClickMenu = () => {
+  const onClickMenu = (delay = 500) => {
     setTimeout(() => {
       setOpenMenu((prevState) => !prevState);
-    }, 500);
+    }, delay);
   };
   return (
     <div className="menu flex flex-col justify-between p-6 h-full w-full">
       <div
         className="menu_close w-full flex flex-row-reverse pb-4"
-        onClick={onClickMenu}
+        onClick={() => onClickMenu(0)}
       >
         <svg
           className="h-6 w-6 fill-gray-100"
@@ -33,22 +33,22 @@ function DropDown({ setOpenMenu }) {
       </div>
       <menu className="flex flex-col h-2/5 justify-around">
         <li className={classElementList}>
-          <a onClick={onClickMenu} href="#aboutme">
+          <a onClick={() => onClickMenu()} href="#aboutme">
             Sobre mí
           </a>
         </li>
         <li className={classElementList}>
-          <a onClick={onClickMenu} href="#studies">
+          <a onClick={() => onClickMenu()} href="#studies">
             Formación
           </a>
         </li>
         <li className={classElementList}>
-          <a onClick={onClickMenu} href="#projects">
+          <a onClick={() => onClickMenu()} href="#projects">
             Proyectos
           </a>
         </li>
         <li className={classElementList}>
-          <a onClick={onClickMenu} href="#contact">
+          <a onClick={() => onClickMenu()} href="#contact">
             Contacto
           </a>
         </li>

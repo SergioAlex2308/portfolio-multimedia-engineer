@@ -6,24 +6,28 @@ import { Header } from "../Header/Header";
 function About() {
   const title = "Sobre mí";
   return (
-    <section id="aboutme" className="about snap-center h-screen bg-gray-500 font-header text-3xl text-gray-100 flex flex-col justify-between">
+    <section
+      id="aboutme"
+      className="about snap-center h-screen bg-gray-500 font-header text-3xl text-gray-100 flex flex-col justify-between"
+    >
       <Header title={title} />
-      <div className="about_info flex flex-col h-full items-center justify-between px-6">
-        <div className="about_photo w-2/5">
+      <div className="about_info flex flex-col h-full items-center justify-evenly px-6">
+        <div className="about_photo w-3/5">
           <img
+            className="rounded-xl drop-shadow-xl"
             src={require("../../assets/Images/Background/Profile.png")}
             alt="Hombre con lentes sonriendo"
           />
         </div>
-        <p className="about_text font-body text-sm">
-          Soy Ingeniero en multimedia con un enfoque en el desarrollo frontend y
-          diseño de interfaces, he realizado algunos proyectos utilizando
-          tecnologías web utilizando librerias como ReactJS, VueJS y Bootstrap,
-          preprocesadores como Sass, frameworks de estilos como Tailwind CSS.
-          También elaborando vistas, sistemas de diseño y prototipos en Figma.
-          Gracias a mis estudios desarrollé habilidades para la creación de
-          contenido digital teniendo una visión crítica y objetiva, aplicándola
-          en los proyectos a realizar.
+        <p className="about_text font-body text-left text-sm px-8">
+          Soy <strong className="text-blue-300">Ingeniero en Mutimedia</strong> con un enfoque en el y
+          diseño de interfaces, elaborando vistas, sistemas de diseño y
+          prototipos en Figma.
+          <br />
+          <br />
+          Aplico mis habilidades para la creación de contenido digital teniendo
+          una visión crítica y objetiva, aplicándola en los proyectos a
+          realizar.
         </p>
       </div>
       <Divider />

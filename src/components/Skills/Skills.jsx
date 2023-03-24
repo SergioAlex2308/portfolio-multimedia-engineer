@@ -3,19 +3,19 @@ import { Header } from "../Header/Header";
 import { Divider } from "../Divider/Divider";
 import { Tooltip } from "@material-tailwind/react";
 // Design SVG
-import { ReactComponent as AfterEffects } from "../../assets/Icons/Programs/AfterEffects.svg";
-import { ReactComponent as Figma } from "../../assets/Icons/Programs/Figma.svg";
-import { ReactComponent as Illustrator } from "../../assets/Icons/Programs/Illustrator.svg";
-import { ReactComponent as Lightroom } from "../../assets/Icons/Programs/Lightroom.svg";
-import { ReactComponent as Photoshop } from "../../assets/Icons/Programs/Photoshop.svg";
-import { ReactComponent as Premier } from "../../assets/Icons/Programs/Premier.svg";
+import { ReactComponent as AfterEffects } from "assets/Icons/Programs/AfterEffects.svg";
+import { ReactComponent as Figma } from "assets/Icons/Programs/Figma.svg";
+import { ReactComponent as Illustrator } from "assets/Icons/Programs/Illustrator.svg";
+import { ReactComponent as Lightroom } from "assets/Icons/Programs/Lightroom.svg";
+import { ReactComponent as Photoshop } from "assets/Icons/Programs/Photoshop.svg";
+import { ReactComponent as Premier } from "assets/Icons/Programs/Premier.svg";
 // Dev SVG
-import { ReactComponent as Git } from "../../assets/Icons/Programs/Git.svg";
-import { ReactComponent as Javascript } from "../../assets/Icons/Programs/Javascript.svg";
-import { ReactComponent as ReactLogo } from "../../assets/Icons/Programs/ReactLogo.svg";
-import { ReactComponent as Sass } from "../../assets/Icons/Programs/Sass.svg";
-import { ReactComponent as Tailwind } from "../../assets/Icons/Programs/Tailwind.svg";
-import { ReactComponent as Vue } from "../../assets/Icons/Programs/Vue.svg";
+import { ReactComponent as Git } from "assets/Icons/Programs/Git.svg";
+import { ReactComponent as Javascript } from "assets/Icons/Programs/Javascript.svg";
+import { ReactComponent as ReactLogo } from "assets/Icons/Programs/ReactLogo.svg";
+import { ReactComponent as Sass } from "assets/Icons/Programs/Sass.svg";
+import { ReactComponent as Tailwind } from "assets/Icons/Programs/Tailwind.svg";
+import { ReactComponent as Vue } from "assets/Icons/Programs/Vue.svg";
 
 function Skills() {
   const title = "Habilidades";

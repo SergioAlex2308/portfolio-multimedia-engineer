@@ -1,21 +1,24 @@
 import React from "react";
 
-function Button({ icon, label, url }) {
-  if (!icon) {
+import { ReactComponent as IconLink } from "assets/Icons/links.svg";
+
+function Button({ label, url, download }) {
+  if (download) {
     return (
-      <button className="w-full h-7 bg-transparent border-2 border-blue-300 rounded hover:bg-blue-300 hover:text-gray-100 font-header text-blue-300 text-center">
-        <a href={url} target="_blank" rel="noopener noreferrer">
+      <a href={url} download>
+        <button className="w-full h-7 bg-transparent border-2 border-blue-300 rounded hover:bg-blue-300 hover:text-gray-100 font-header text-blue-300 text-center">
           {label}
-        </a>
-      </button>
+        </button>
+      </a>
     );
   } else {
     return (
-      <button className="w-full h-7 bg-blue-300 rounded hover:bg-blue-400  font-header text-gray-100 text-center">
-        <a href={url} target="_blank" rel="noopener noreferrer">
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        <button className="w-24 h-7 flex px-4 py-2 justify-between items-center bg-blue-300 rounded hover:bg-blue-400  font-header text-gray-100 text-center">
           {label}
-        </a>
-      </button>
+          <IconLink />
+        </button>
+      </a>
     );
   }
 }

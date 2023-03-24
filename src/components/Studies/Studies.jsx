@@ -1,7 +1,7 @@
 import React from "react";
-import { Header } from "../Header/Header";
+import { Header } from "components/Header/Header";
 import { CourseItem } from "./CourseItem";
-import { Divider } from "../Divider/Divider";
+import { Divider } from "components/Divider/Divider";
 
 function Studies() {
   const title = "Formación";
@@ -119,7 +119,7 @@ function Studies() {
             </p>
           </div>
         </div>
-        <div className="studies_courses_list h-80 overflow-auto grid place-items-start pl-4">
+        <div className="studies_courses_list h-80 overflow-auto grid place-items-start pl-4 py-2 rounded-lg shadow-[inset_0_-59px_214px_-107px_rgba(0,181,194,0.2)]">
           {courses.map((course) => (
             <CourseItem
               key={course.name}
