@@ -12,17 +12,25 @@ For this stage, I had to define foundations such as colors, fonts, sizes and vis
 
 This process was made in Figma, here you can see some pictures that how I worked it, if you want to see details, here I leave you a link to see the project on Figma.
 
-*** Foundations ***
+**Foundations**
 
 
 
-*** Components ***
+**Components**
 
-### Development
+## Development
+
+### 🤓 Tech Stack
+
+* __React__ 18.2.0
+* __TailwindCSS__ 3.2.7
+* __Tailwind Material__ 1.4.2
+* __React Hot toast__ 2.4.0
+* __Swiper__ 9.1.1
+* __Emailjs__ 3.10.0
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-# Getting Started with Create React App
 
 ## Available Scripts
 
