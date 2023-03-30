@@ -1,4 +1,5 @@
 import React from "react";
+import { ChangeLanguage } from "components/ToggleLang/ToggleLang";
 
 function NavMenu({ setOpenMenu }) {
   const onClickMenu = () => {
@@ -12,6 +13,7 @@ function NavMenu({ setOpenMenu }) {
           <span className="text-sm text-center text-gray-300">SM</span>
         </a>
       </div>
+      <ChangeLanguage />
       <div onClick={onClickMenu}>
         <svg
           /* xmlns="http://www.w3.org/2000/svg" */

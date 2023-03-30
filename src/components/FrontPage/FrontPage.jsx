@@ -1,11 +1,15 @@
 import React from "react";
-import { Button } from "components/Button/Button"
+import { Button } from "components/Button/Button";
 import { SocialIcons } from "../SocialIcons/SocialIcons";
 
+import { useTranslation } from "react-i18next";
+
 function FrontPage() {
+  const { t, i18n } = useTranslation();
+
   const label = "CV";
   const icon = false;
-  const url = '../../assets/Pdf/CV_SergioMartínez.pdf';
+  const url = "../../assets/Pdf/CV_SergioMartínez.pdf";
   const download = true;
 
   return (
@@ -14,7 +18,7 @@ function FrontPage() {
         <div className="main_overlay absolute w-full h-full bg-gray-600 opacity-50"></div>
         <div className="main_info pl-10 z-20">
           <div className="main_info_text font-header text-left">
-            <h2 className="text-2xl text-blue-300">!Hola! Soy</h2>
+            <h2 className="text-2xl text-blue-300">{t("frontpage.greeting")}</h2>
             <h1 className="text-3xl text-gray-100">Sergio Martínez</h1>
             <h5 className="text-base text-gray-100">Ingeniero en Multimedia</h5>
           </div>

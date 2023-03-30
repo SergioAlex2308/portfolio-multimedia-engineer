@@ -11,6 +11,8 @@ import { useMenuContext } from 'context/MenuContext';
 import { Footer } from 'components/Footer/Footer';
 import { About } from 'components/About/About';
 
+import './language/i18n';
+
 function App() {
 
   const { openMenu, setOpenMenu } = useMenuContext();
