@@ -1,6 +1,5 @@
 import React from "react";
 import { CardProject } from "./CardProject";
-import { Projects } from "../../global/es-information";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -10,7 +9,9 @@ import "swiper/css/pagination";
 
 import { Pagination, Mousewheel, Keyboard, EffectCoverflow } from "swiper";
 
-function Carrousel() {
+function Carrousel(props) {
+
+  const Projects = props.data;
 
   return (
     <Swiper

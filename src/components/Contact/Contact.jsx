@@ -3,23 +3,34 @@ import { Header } from "../Header/Header";
 import { SocialIcons } from "../SocialIcons/SocialIcons";
 import { Input } from "@material-tailwind/react";
 import toast, { Toaster } from "react-hot-toast";
-
 import emailjs from "@emailjs/browser";
+import i18n from "i18next";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
-  const title = "Contacto";
   const SERVICE = process.env.REACT_APP_SERVICE_ID;
   const TEMPLATE = process.env.REACT_APP_TEMPLATE_ID;
   const KEY = process.env.REACT_APP_PUBLIC_KEY;
+
+  const currentLanguage = i18n.language;
+  const textContact = require(currentLanguage === "es"
+    ? "language/es.json"
+    : "language/en.json");
+  const textMessage = textContact["contact.action"];
+  const arrayMessage = textMessage.split(" ");
+  let keyword = currentLanguage === "es" ? "correo" : "email";
+
+  const { t } = useTranslation();
+  const title = t("contact.title");
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
     toast.promise(emailjs.sendForm(SERVICE, TEMPLATE, form.current, KEY), {
-      loading: "Loading",
+      loading: t("contact.notify.loading"),
       success: () =>
-        "¡Gracias por contactarme! Te responderé lo antes posible.",
+        t("contact.notify.success"),
       error: (err) => `This just happened: ${err.text}`,
     });
   };
@@ -27,7 +38,7 @@ function Contact() {
   const notifyCopyText = () => {
     const mail = "smartinez.ing.mul@gmail.com";
     navigator.clipboard.writeText(mail).then(function () {
-      toast.success("Copiado en el portapapeles!", {
+      toast.success(t("contact.notify.copy"), {
         id: "clipboard",
         duration: 1000,
         icon: "📎",
@@ -61,14 +72,21 @@ function Contact() {
           <SocialIcons />
           <div className="contact_info_divider h-24 border-l-2 mx-4"></div>
           <div className="contact_info_text text-left text-gray-100">
-            <h4 className="font-header text-xl">!Enviame un mensaje!</h4>
+            <h4 className="font-header text-xl">{t("contact.calltoaction")}</h4>
             <p className="font-body">
-              Por{" "}
-              <span className="text-blue-300" onClick={notifyCopyText}>
-                correo
-              </span>{" "}
-              o a través de mis
-              <span className="text-blue-300"> redes sociales</span>
+              {arrayMessage.map((word, index) =>
+                word.toLowerCase().includes(keyword.toLowerCase()) ? (
+                  <span
+                    key={index}
+                    className="text-blue-300"
+                    onClick={notifyCopyText}
+                  >
+                    {word}{" "}
+                  </span>
+                ) : (
+                  <span key={index}>{word} </span>
+                )
+              )}
             </p>
           </div>
         </div>
@@ -76,19 +94,19 @@ function Contact() {
           <form ref={form} className="flex flex-col gap-8" onSubmit={sendEmail}>
             <Input
               variant="standard"
-              label="Nombre Completo"
+              label={t("contact.form.name")}
               name="user_name"
               required
             />
             <Input
               variant="standard"
-              label="Correo"
+              label={t("contact.form.email")}
               name="user_email"
               required
             />
             <Input
               variant="standard"
-              label="¿Cómo puedo ayudarte?"
+              label={t("contact.form.message")}
               name="message"
               required
             />
@@ -96,7 +114,7 @@ function Contact() {
               type="submit"
               className="border border-blue-300 text-blue-300 py-2 rounded-md hover:bg-blue-300 hover:text-gray-100 font-header "
             >
-              Enviar
+              {t("contact.form.button")}
             </button>
           </form>
         </div>

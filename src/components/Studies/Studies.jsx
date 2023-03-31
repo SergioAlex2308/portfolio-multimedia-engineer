@@ -3,58 +3,61 @@ import { Header } from "components/Header/Header";
 import { CourseItem } from "./CourseItem";
 import { Divider } from "components/Divider/Divider";
 
+import { useTranslation } from "react-i18next";
+
 function Studies() {
-  const title = "Formación";
+  const { t } = useTranslation();
+  const title = t("studies.title");
   const urlBase = "https://platzi.com/p/semartinezc23/curso";
 
   const courses = [
     {
-      name: "Curso Frontend Developer",
+      name: t("studies.course.1"),
       img: `Course_frontend.webp`,
       url: `${urlBase}/2477-course/diploma/detalle/`,
     },
     {
-      name: "Curso Profesional de JavaScript",
+      name: t("studies.course.2"),
       img: `Course_JavaScript.webp`,
       url: `${urlBase}/1642-course/diploma/detalle/`,
     },
     {
-      name: "Curso Librerias JavaScript",
+      name: t("studies.course.3"),
       img: `Course_Libraries.avif`,
       url: `${urlBase}/2239-frameworks-javascript/diploma/detalle/`,
     },
     {
-      name: "Curso Introducción a ReactJS",
+      name: t("studies.course.4"),
       img: `Course_IntroReact.avif`,
       url: `${urlBase}/2444-react/diploma/detalle/`,
     },
     {
-      name: "Curso Patrones de Render",
+      name: t("studies.course.5"),
       img: `Course_RenderPatterns.avif`,
       url: `${urlBase}/2457-course/diploma/detalle/`,
     },
     {
-      name: "Curso Estado en ReactJS",
+      name: t("studies.course.6"),
       img: `Course_RenderPatterns.avif`,
       url: `${urlBase}/2597-react-estado/diploma/detalle/`,
     },
     {
-      name: "Curso React Router",
+      name: t("studies.course.7"),
       img: `Course_ReactRouter.png`,
       url: `${urlBase}/2444-react/diploma/detalle/`,
     },
     {
-      name: "Curso Básico VueJS 2",
+      name: t("studies.course.8"),
       img: `Course_Vue2.avif`,
       url: `${urlBase}/1752-vuejs2/diploma/detalle/`,
     },
     {
-      name: "Curso Figma avanzado",
+      name: t("studies.course.9"),
       img: `Course_Figma.avif`,
       url: `${urlBase}/2582-figma-avanzado/diploma/detalle/`,
     },
     {
-      name: "Curso Diseño de interfaces",
+      name: t("studies.course.10"),
       img: `Course_UIDesign.avif`,
       url: `${urlBase}/1493-course/diploma/detalle/`,
     },
@@ -86,10 +89,10 @@ function Studies() {
           <div className="border-l-2 h-7 mx-2.5"></div>
           <div className="studies_career_info text-gray-100 text-left">
             <h4 className="font-header text-xl tracking-wide">
-              Ingeniería en Multimedia
+              {t("studies.carreer")}
             </h4>
             <p className="font-body text-xs italic">
-              Universidad Militar Nueva Granada /{" "}
+              {t("studies.university")} /{" "}
               <strong className="font-bold not-italic">2018 - 2022</strong>
             </p>
           </div>

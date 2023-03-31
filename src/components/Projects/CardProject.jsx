@@ -1,8 +1,10 @@
 import React from "react";
 import { Button } from "../Button/Button";
+import { useTranslation } from "react-i18next";
 
 function CardProject({ title, date, description, url, src, alt }) {
-  const label = "Ver proyecto";
+  const { t } = useTranslation(); 
+  const label = t("projects.button");
   const download = false;
 
   return (

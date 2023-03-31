@@ -17,8 +17,11 @@ import { ReactComponent as Sass } from "assets/Icons/Programs/Sass.svg";
 import { ReactComponent as Tailwind } from "assets/Icons/Programs/Tailwind.svg";
 import { ReactComponent as Vue } from "assets/Icons/Programs/Vue.svg";
 
+import { useTranslation } from "react-i18next";
+
 function Skills() {
-  const title = "Habilidades";
+  const { t } = useTranslation();
+  const title = t("skills.title");
 
   const styleLogo =
     "w-14 grayscale transition ease-in-out hover:grayscale-0 hover:scale-110";
@@ -27,7 +30,7 @@ function Skills() {
     <section id="skills" className="skill snap-center h-screen bg-gray-500 font-header text-3xl text-gray-100 flex flex-col justify-between">
       <Header title={title} />
       <div className="skill_design px-14">
-        <h3 className="mb-14">Diseño</h3>
+        <h3 className="mb-14">{t("skills.design")}</h3>
         <div className="skill_desing_logos w-full grid grid-cols-3 grid-rows-2 place-items-center gap-5">
           <Tooltip
             content="Figma"
@@ -89,7 +92,7 @@ function Skills() {
         </div>
       </div>
       <div className="skill_dev px-14 mb-12">
-        <h3 className="mb-14">Desarrollo</h3>
+        <h3 className="mb-14">{t("skills.dev")}</h3>
         <div className="skill_dev_logos w-full grid grid-cols-3 grid-rows-2 place-items-center gap-5">
           <Tooltip
             content="Git"

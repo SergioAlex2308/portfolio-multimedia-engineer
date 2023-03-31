@@ -5,7 +5,7 @@ import { SocialIcons } from "../SocialIcons/SocialIcons";
 import { useTranslation } from "react-i18next";
 
 function FrontPage() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const label = "CV";
   const icon = false;
@@ -20,7 +20,7 @@ function FrontPage() {
           <div className="main_info_text font-header text-left">
             <h2 className="text-2xl text-blue-300">{t("frontpage.greeting")}</h2>
             <h1 className="text-3xl text-gray-100">Sergio Martínez</h1>
-            <h5 className="text-base text-gray-100">Ingeniero en Multimedia</h5>
+            <h5 className="text-base text-gray-100">{t("frontpage.role")}</h5>
           </div>
           <div className="main_button w-20 h-7">
             <Button label={label} icon={icon} url={url} download={download} />

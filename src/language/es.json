@@ -21,7 +21,7 @@
 	"studies.course.10": "Curso Diseño de Interfaces",
 	"projects.title": "Proyectos",
 	"projects.button": "Ver proyecto",
-	"project.ferriel.title": "Ferriel web",
+	"projects.ferriel.title": "Ferriel web",
 	"projects.ferriel.description": "Ferriel web es la creación de un recorrido virtual en donde se presentan 4 estaciones que conforman el sistema ferroviario de la sabana de Bogotá.",
 	"projects.vida.title": "Cortometraje \"Vida\"",
 	"projects.vida.description": "Cortometraje realizado en la Universidad Militar Nueva Granada",
@@ -38,5 +38,8 @@
 	"contact.form.email": "Correo",
 	"contact.form.message": "¿Cómo puedo ayudarte?",
 	"contact.form.button": "Enviar",
+	"contact.notify.copy": "Copiado en el portapapeles",
+	"contact.notify.loading": "Enviando",
+	"contact.notify.success": "¡Gracias por contactarme! Te responderé lo antes posible.",
 	"footer.thanks": "!Gracias por ver!"
 }

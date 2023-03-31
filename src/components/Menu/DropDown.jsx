@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function DropDown({ setOpenMenu }) {
+  const { t } = useTranslation();
   const classElementList =
     "font-header text-gray-100 text-6xl hover:text-blue-300 hover:underline";
 
@@ -34,22 +36,22 @@ function DropDown({ setOpenMenu }) {
       <menu className="flex flex-col h-2/5 justify-around">
         <li className={classElementList}>
           <a onClick={() => onClickMenu()} href="#aboutme">
-            Sobre mí
+            {t("about.title")}
           </a>
         </li>
         <li className={classElementList}>
           <a onClick={() => onClickMenu()} href="#studies">
-            Formación
+          {t("studies.title")}
           </a>
         </li>
         <li className={classElementList}>
           <a onClick={() => onClickMenu()} href="#projects">
-            Proyectos
+          {t("projects.title")}
           </a>
         </li>
         <li className={classElementList}>
           <a onClick={() => onClickMenu()} href="#contact">
-            Contacto
+          {t("contact.title")}
           </a>
         </li>
       </menu>

@@ -2,9 +2,11 @@ import React from "react";
 
 import { Divider } from "../Divider/Divider";
 import { Header } from "../Header/Header";
+import { useTranslation } from "react-i18next";
 
 function About() {
-  const title = "Sobre mí";
+  const { t } = useTranslation();
+  const title = t("about.title");
   return (
     <section
       id="aboutme"
@@ -19,15 +21,8 @@ function About() {
             alt="Hombre con lentes sonriendo"
           />
         </div>
-        <p className="about_text font-body text-left text-sm px-8">
-          Soy <strong className="text-blue-300">Ingeniero en Mutimedia</strong> con un enfoque en el y
-          diseño de interfaces, elaborando vistas, sistemas de diseño y
-          prototipos en Figma.
-          <br />
-          <br />
-          Aplico mis habilidades para la creación de contenido digital teniendo
-          una visión crítica y objetiva, aplicándola en los proyectos a
-          realizar.
+        <p className="about_text font-body text-center text-sm px-8">
+          {t("about.description")}
         </p>
       </div>
       <Divider />
