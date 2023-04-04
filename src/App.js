@@ -1,4 +1,3 @@
-import './App.css';
 import { Menu } from 'components/Menu/Menu';
 import { NavMenu } from 'components/Menu/NavMenu'
 import { FrontPage } from 'components/FrontPage/FrontPage';

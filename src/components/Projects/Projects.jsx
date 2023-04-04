@@ -64,10 +64,10 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="snap-center h-screen bg-gray-500 flex flex-col justify-between"
+      className="snap-center h-screen bg-gray-500 flex flex-col justify-between items-center"
     >
       <Header title={title} />
-      <div className="h-full w-full flex px-2">
+      <div className="h-full w-full flex px-2 laptop:w-11/12 desktop:w-9/12">
         <Carrousel data={Projects} />
       </div>
       <Divider />

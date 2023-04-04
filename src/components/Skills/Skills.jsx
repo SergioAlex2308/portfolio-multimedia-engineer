@@ -27,132 +27,138 @@ function Skills() {
     "w-14 grayscale transition ease-in-out hover:grayscale-0 hover:scale-110";
 
   return (
-    <section id="skills" className="skill snap-center h-screen bg-gray-500 font-header text-3xl text-gray-100 flex flex-col justify-between">
+    <section
+      id="skills"
+      className="skill snap-center h-screen bg-gray-500 font-header text-3xl text-gray-100 flex flex-col items-center justify-between"
+    >
       <Header title={title} />
-      <div className="skill_design px-14">
-        <h3 className="mb-14">{t("skills.design")}</h3>
-        <div className="skill_desing_logos w-full grid grid-cols-3 grid-rows-2 place-items-center gap-5">
-          <Tooltip
-            content="Figma"
-            animate={{
-              mount: { scale: 1, y: -5 },
-              unmount: { scale: 0, y: 25 },
-            }}
-          >
-            <Figma className={styleLogo} />
-          </Tooltip>
-          <Tooltip
-            content="After Effects"
-            animate={{
-              mount: { scale: 1, y: -5 },
-              unmount: { scale: 0, y: 25 },
-            }}
-          >
-            <AfterEffects className={styleLogo} />
-          </Tooltip>
-          <Tooltip
-            content="Illustrator"
-            animate={{
-              mount: { scale: 1, y: -5 },
-              unmount: { scale: 0, y: 25 },
-            }}
-          >
-            <Illustrator className={styleLogo} />
-          </Tooltip>
-          <Tooltip
-            content="Photoshop"
-            placement="bottom"
-            animate={{
-              mount: { scale: 1, y: 5 },
-              unmount: { scale: 0, y: -25 },
-            }}
-          >
-            <Photoshop className={styleLogo} />
-          </Tooltip>
-          <Tooltip
-            content="Lightroom"
-            placement="bottom"
-            animate={{
-              mount: { scale: 1, y: 5 },
-              unmount: { scale: 0, y: -25 },
-            }}
-          >
-            <Lightroom className={styleLogo} />
-          </Tooltip>
-          <Tooltip
-            content="Premier Pro"
-            placement="bottom"
-            animate={{
-              mount: { scale: 1, y: 5 },
-              unmount: { scale: 0, y: -25 },
-            }}
-          >
-            <Premier className={styleLogo} />
-          </Tooltip>
+      <div className="skills_content w-full flex flex-col items-center tablet:w-11/12 laptop:flex-row laptop:w-8/12">
+        <div className="skill_design px-14 mb-12 flex flex-col items-center tablet:w-2/4 laptop:mb-0">
+          <h3 className="mb-14 tablet:text-4xl">{t("skills.design")}</h3>
+          <div className="skill_desing_logos w-full grid grid-cols-3 grid-rows-2 place-items-center gap-5 laptop:w-8/12">
+            <Tooltip
+              content="Figma"
+              animate={{
+                mount: { scale: 1, y: -5 },
+                unmount: { scale: 0, y: 25 },
+              }}
+            >
+              <Figma className={styleLogo}/>
+            </Tooltip>
+            <Tooltip
+              content="After Effects"
+              animate={{
+                mount: { scale: 1, y: -5 },
+                unmount: { scale: 0, y: 25 },
+              }}
+            >
+              <AfterEffects className={styleLogo} />
+            </Tooltip>
+            <Tooltip
+              content="Illustrator"
+              animate={{
+                mount: { scale: 1, y: -5 },
+                unmount: { scale: 0, y: 25 },
+              }}
+            >
+              <Illustrator className={styleLogo} />
+            </Tooltip>
+            <Tooltip
+              content="Photoshop"
+              placement="bottom"
+              animate={{
+                mount: { scale: 1, y: 5 },
+                unmount: { scale: 0, y: -25 },
+              }}
+            >
+              <Photoshop className={styleLogo} />
+            </Tooltip>
+            <Tooltip
+              content="Lightroom"
+              placement="bottom"
+              animate={{
+                mount: { scale: 1, y: 5 },
+                unmount: { scale: 0, y: -25 },
+              }}
+            >
+              <Lightroom className={styleLogo} />
+            </Tooltip>
+            <Tooltip
+              content="Premier Pro"
+              placement="bottom"
+              animate={{
+                mount: { scale: 1, y: 5 },
+                unmount: { scale: 0, y: -25 },
+              }}
+            >
+              <Premier className={styleLogo} />
+            </Tooltip>
+          </div>
+        </div>
+        <div className="skill_dev px-14 flex flex-col items-center tablet:w-2/4">
+          <h3 className="mb-14 tablet:text-4xl">{t("skills.dev")}</h3>
+          <div className="skill_dev_logos w-full grid grid-cols-3 grid-rows-2 place-items-center gap-5 laptop:w-8/12">
+            <Tooltip
+              content="Git"
+              animate={{
+                mount: { scale: 1, y: -5 },
+                unmount: { scale: 0, y: 25 },
+              }}
+            >
+              <Git className={styleLogo} />
+            </Tooltip>
+            <Tooltip
+              content="Javascript"
+              animate={{
+                mount: { scale: 1, y: -5 },
+                unmount: { scale: 0, y: 25 },
+              }}
+            >
+              <Javascript className={styleLogo} />
+            </Tooltip>
+            <Tooltip
+              content="React JS"
+              animate={{
+                mount: { scale: 1, y: -5 },
+                unmount: { scale: 0, y: 25 },
+              }}
+            >
+              <ReactLogo className={styleLogo} />
+            </Tooltip>
+            <Tooltip
+              content="Sass"
+              placement="bottom"
+              animate={{
+                mount: { scale: 1, y: 5 },
+                unmount: { scale: 0, y: -25 },
+              }}
+            >
+              <Sass className={styleLogo} />
+            </Tooltip>
+            <Tooltip
+              content="Tailwind CSS"
+              placement="bottom"
+              animate={{
+                mount: { scale: 1, y: 5 },
+                unmount: { scale: 0, y: -25 },
+              }}
+            >
+              <Tailwind className={styleLogo} />
+            </Tooltip>
+            <Tooltip
+              content="Vue JS"
+              placement="bottom"
+              animate={{
+                mount: { scale: 1, y: 5 },
+                unmount: { scale: 0, y: -25 },
+              }}
+            >
+              <Vue className={styleLogo} />
+            </Tooltip>
+          </div>
         </div>
       </div>
-      <div className="skill_dev px-14 mb-12">
-        <h3 className="mb-14">{t("skills.dev")}</h3>
-        <div className="skill_dev_logos w-full grid grid-cols-3 grid-rows-2 place-items-center gap-5">
-          <Tooltip
-            content="Git"
-            animate={{
-              mount: { scale: 1, y: -5 },
-              unmount: { scale: 0, y: 25 },
-            }}
-          >
-            <Git className={styleLogo} />
-          </Tooltip>
-          <Tooltip
-            content="Javascript"
-            animate={{
-              mount: { scale: 1, y: -5 },
-              unmount: { scale: 0, y: 25 },
-            }}
-          >
-            <Javascript className={styleLogo} />
-          </Tooltip>
-          <Tooltip
-            content="React JS"
-            animate={{
-              mount: { scale: 1, y: -5 },
-              unmount: { scale: 0, y: 25 },
-            }}
-          >
-            <ReactLogo className={styleLogo} />
-          </Tooltip>
-          <Tooltip
-            content="Sass"
-            placement="bottom"
-            animate={{
-              mount: { scale: 1, y: 5 },
-              unmount: { scale: 0, y: -25 },
-            }}
-          >
-            <Sass className={styleLogo} />
-          </Tooltip>
-          <Tooltip
-            content="Tailwind CSS"
-            placement="bottom"
-            animate={{
-              mount: { scale: 1, y: 5 },
-              unmount: { scale: 0, y: -25 },
-            }}
-          >
-            <Tailwind className={styleLogo} />
-          </Tooltip>
-          <Tooltip
-            content="Vue JS"
-            placement="bottom"
-            animate={{
-              mount: { scale: 1, y: 5 },
-              unmount: { scale: 0, y: -25 },
-            }}
-          >
-            <Vue className={styleLogo} />
-          </Tooltip>
-        </div>
-      </div>
+
       <Divider />
     </section>
   );

@@ -1,48 +1,50 @@
-import React from "react";
-import { CardProject } from "./CardProject";
+import React, { useEffect, useRef } from 'react'
+import { CardProject } from './CardProject'
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react'
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
-import { Pagination, Mousewheel, Keyboard, EffectCoverflow } from "swiper";
+import { Pagination, Mousewheel, Keyboard, EffectCoverflow } from 'swiper'
 
-function Carrousel(props) {
+function Carrousel (props) {
+  const [slides, setSlides] = React.useState(1)
+  const Projects = props.data
+  const deviceSize = useRef([window.innerWidth])
 
-  const Projects = props.data;
+  useEffect(() => {
+    if (deviceSize.current[0] > 768) {
+      setSlides(2)
+    }
+  }, [])
 
   return (
     <Swiper
-      effect={"coverflow"}
+      effect={'coverflow'}
       grabCursor={true}
       mousewheel={true}
       keyboard={true}
       loop
-      slidesPerView={1}
+      slidesPerView={slides}
       spaceBetween={30}
       centeredSlides={true}
       pagination={{
-        clickable: true,
+        clickable: true
       }}
       coverflowEffect={{
         rotate: 0,
         stretch: 0,
         depth: 100,
         modifier: 2.5,
-        slideShadows: false,
+        slideShadows: false
       }}
-      modules={[
-        /* Navigation, */ Pagination,
-        Mousewheel,
-        Keyboard,
-        EffectCoverflow,
-      ]}
-      className="mySwiper"
+      modules={[Pagination, Mousewheel, Keyboard, EffectCoverflow]}
+      className='mySwiper'
     >
-      {Projects.map((p) => (
-        <SwiperSlide >
+      {Projects.map((p, index) => (
+        <SwiperSlide key={index}>
           <CardProject
             key={p.title}
             title={p.title}
@@ -55,7 +57,7 @@ function Carrousel(props) {
         </SwiperSlide>
       ))}
     </Swiper>
-  );
+  )
 }
 
-export { Carrousel };
+export { Carrousel }

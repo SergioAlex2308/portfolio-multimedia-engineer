@@ -6,7 +6,7 @@ function Button({ label, url, download }) {
   if (download) {
     return (
       <a href={url} download>
-        <button className="w-full h-7 bg-transparent border-2 border-blue-300 rounded hover:bg-blue-300 hover:text-gray-100 font-header text-blue-300 text-center">
+        <button className="w-full h-full bg-transparent border-2 border-blue-300 rounded hover:bg-blue-300 hover:text-gray-100 font-header text-blue-300 text-center tablet:text-xl">
           {label}
         </button>
       </a>

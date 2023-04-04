@@ -11,7 +11,7 @@ function CourseItem({ img, name, url }) {
         />
       </figure>
       <a href={url} target="_blank" rel="noopener noreferrer">
-        <p className="font-body font-normal text-base text-gray-100">{name}</p>
+        <p className="font-body font-normal text-base text-gray-200 tablet:text-xl italic hover:not-italic hover:text-gray-100">{name}</p>
       </a>
     </article>
   );
