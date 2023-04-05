@@ -1,6 +1,7 @@
 import React from 'react'
 import { ChangeLanguage } from 'components/ToggleLang/ToggleLang'
 import { useTranslation } from 'react-i18next'
+import { ReactComponent as LogoLight } from 'assets/Icons/Logo/Logo_Light_Silhouette.svg'
 
 function NavMenu ({ setOpenMenu }) {
   const { t } = useTranslation()
@@ -15,7 +16,8 @@ function NavMenu ({ setOpenMenu }) {
     <nav className='flex fixed top-0 w-full z-30 justify-between items-center px-10 py-4 bg-gray-500 drop-shadow-xl'>
       <div className='h-8 w-8 border-2 border-blue-300 rounded-full grid place-items-center'>
         <a href='#home'>
-          <span className='text-sm text-center text-gray-300'>SM</span>
+          <LogoLight width='20px' aria-label='Redirección hacia la página inicial' />
+          {/* <span className='text-sm text-center text-gray-300'>SM</span> */}
         </a>
       </div>
       <div className='sections hidden tablet:inline'>

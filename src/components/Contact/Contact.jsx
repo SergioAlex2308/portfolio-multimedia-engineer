@@ -79,7 +79,7 @@ function Contact () {
                 word.toLowerCase().includes(keyword.toLowerCase()) ? (
                   <span
                     key={index}
-                    className='text-blue-300'
+                    className='text-blue-300 hover:cursor-pointer'
                     onClick={notifyCopyText}
                   >
                     {word}{' '}
