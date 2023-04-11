@@ -1,4 +1,7 @@
 import React from 'react'
+/* import AOS from 'aos'
+import 'aos/dist/aos.css' */
+
 import { Button } from 'components/Button/Button'
 import { SocialIcons } from '../SocialIcons/SocialIcons'
 
@@ -12,6 +15,12 @@ function FrontPage () {
   const url = '../../assets/Pdf/CV_SergioMartínez.pdf'
   const download = true
 
+  /* useEffect(() => {
+    AOS.init({
+      duration: 800
+    })
+  }) */
+
   return (
     <section
       id='home'
@@ -22,30 +31,38 @@ function FrontPage () {
         <div className='main_text h-2/4 flex flex-col justify-around z-10 w-full tablet:w-11/12 desktop:w-9/12'>
           <div className='main_info pl-10 z-20 w-4/5'>
             <div className='main_info_text font-header text-left flex flex-col'>
-              <h3 className='text-2xl text-blue-300 tablet:text-6xl'>
+              <h3
+                data-aos='fade-right'
+                className='text-2xl text-blue-300 tablet:text-6xl'
+              >
                 {t('frontpage.greeting')}
               </h3>
-              <h1 className='text-3xl text-gray-100 tablet:text-8xl'>
+              <h1
+                data-aos='fade-right'
+                data-aos-delay='100'
+                className='text-3xl text-gray-100 tablet:text-8xl'
+              >
                 Sergio Martínez
               </h1>
-              <h2 className='text-base text-gray-100 tablet:text-4xl'>
+              <h2
+                data-aos='fade-right'
+                data-aos-delay='200'
+                className='text-base text-gray-100 tablet:text-4xl mb-4'
+              >
                 {t('frontpage.role')}
               </h2>
             </div>
-            <div className='main_button w-20 h-7 tablet:w-28 tablet:h-10'>
+            <div
+              data-aos='fade-right'
+              data-aos-delay='300'
+              className='main_button w-20 h-7 tablet:w-28 tablet:h-10'
+            >
               <Button label={label} icon={icon} url={url} download={download} />
             </div>
           </div>
           <div className='main_contact pl-10 w-full py-9 z-20'>
             <div className='flex justify-between'>
               <SocialIcons />
-              {/* <div className='flex items-center text-gray-200 rotate-90'>
-                <span className='border-t-2 w-5'></span>
-                <p className='text-gray-100 px-2 font-body font-normal italic tracking-widest'>
-                  Scroll
-                </p>
-                <span className='border-t-2 w-5'></span>
-              </div> */}
             </div>
           </div>
         </div>
