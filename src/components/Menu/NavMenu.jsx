@@ -14,10 +14,12 @@ function NavMenu ({ setOpenMenu }) {
 
   return (
     <nav className='flex fixed top-0 w-full z-30 justify-between items-center px-10 py-4 bg-gray-500 drop-shadow-xl'>
-      <div className='h-8 w-8 border-2 border-blue-300 rounded-full grid place-items-center'>
+      <div className='h-8 w-8 border-2 border-blue-300 rounded-full hidden tablet:grid place-items-center '>
         <a href='#home'>
-          <LogoLight width='20px' aria-label='Redirección hacia la página inicial' />
-          {/* <span className='text-sm text-center text-gray-300'>SM</span> */}
+          <LogoLight
+            width='20px'
+            aria-label='Redirección hacia la página inicial'
+          />
         </a>
       </div>
       <div className='sections hidden tablet:inline'>

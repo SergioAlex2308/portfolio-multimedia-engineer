@@ -17,7 +17,7 @@ function FrontPage () {
       id='home'
       className='relative h-screen snap-center scroll-mt-20 flex flex-col main_photo z-10 bg-photo-main-small bg-cover bg-no-repeat bg-center tablet:bg-photo-main-large tablet:bg-right-top'
     >
-      <div className='main_overlay absolute w-full h-full bg-gray-600 opacity-30'></div>
+      <div className='main_overlay absolute w-full h-full bg-gradient-to-r from-gray-600 to-transparent'></div>
       <div className='main z-10 h-full flex justify-center items-center'>
         <div className='main_text h-2/4 flex flex-col justify-around z-10 w-full tablet:w-11/12 desktop:w-9/12'>
           <div className='main_info pl-10 z-20 w-4/5'>

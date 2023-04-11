@@ -66,7 +66,7 @@ function Contact () {
           }
         }}
       />
-      <div className='contact flex flex-col gap-y-14 w-96 desktop:w-3/5 h-full justify-evenly items-center'>
+      <div className='contact flex flex-col w-96 desktop:w-3/5 h-full justify-evenly items-center'>
         <div className='contact_info flex items-center px-12'>
           <SocialIcons />
           <div className='contact_info_divider h-32 border-l-2 mx-8'></div>
@@ -91,7 +91,7 @@ function Contact () {
             </p>
           </div>
         </div>
-        <div className='contact_form w-10/12 desktop:w-96 shadow-2xl px-6 py-8'>
+        <div className='contact_form w-10/12 desktop:w-96 shadow-2xl px-6 py-4'>
           <form ref={form} className='flex flex-col gap-8' onSubmit={sendEmail}>
             <Input
               variant='static'

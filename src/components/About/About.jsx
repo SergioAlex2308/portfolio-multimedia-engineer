@@ -14,7 +14,7 @@ function About() {
     >
       <Header title={title} />
       <div className="about_info flex flex-col h-full items-center justify-evenly px-6 laptop:flex-row w-full tablet:w-11/12 desktop:w-9/12">
-        <div className="about_photo w-3/5 tablet:w-2/6 desktop:w-3/12">
+        <div className="about_photo w-3/5 tablet:w-4/12 desktop:w-3/12">
           <img
             className="rounded-xl drop-shadow-xl"
             src={require("../../assets/Images/Background/Profile.png")}
