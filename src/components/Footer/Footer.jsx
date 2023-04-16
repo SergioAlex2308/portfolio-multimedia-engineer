@@ -5,7 +5,7 @@ import { ReactComponent as LogoLight } from 'assets/Icons/Logo/Logo_Light_Silhou
 function Footer () {
   const { t } = useTranslation()
   return (
-    <footer className='snap-end flex flex-col justify-center items-center w-full h-full gap-5 bg-gray-500 text-gray-400 font-body italic py-4'>
+    <footer className='snap-end flex flex-col justify-center items-center w-full h-full gap-5 bg-gray-500 text-gray-100 font-body italic py-4'>
       <div className='footer-logo'>
         <LogoLight width='40px' />
       </div>

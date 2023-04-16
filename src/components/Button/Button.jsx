@@ -14,7 +14,7 @@ function Button({ label, url, download }) {
   } else {
     return (
       <a href={url} target="_blank" rel="noopener noreferrer">
-        <button className="w-24 h-7 flex px-4 py-2 justify-between items-center bg-blue-300 rounded hover:bg-blue-400  font-header text-gray-100 text-center">
+        <button className="w-24 h-7 flex px-4 py-2 justify-between items-center bg-blue-300 rounded hover:bg-blue-400  font-header text-blue-gray-900 text-center">
           {label}
           <IconLink />
         </button>
