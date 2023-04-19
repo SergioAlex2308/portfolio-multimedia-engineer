@@ -16,7 +16,7 @@ function Projects() {
       description: t("projects.ferriel.description"),
       url: "https://www.behance.net/gallery/150069589/Ferriel-Web",
       img: {
-        src: "Ferriel.jpg",
+        src: "Ferriel.webp",
         alt: "Imagen de dos pantallas desde una vista frontal mostrando el sitio web con un texto con el titulo del proyecto a la izquierda",
       },
     },
@@ -26,7 +26,7 @@ function Projects() {
       description: t("projects.vida.description"),
       url: "https://www.behance.net/gallery/157835069/Cortometraje-VIDA",
       img: {
-        src: "Vida.png",
+        src: "Vida.webp",
         alt: "Mujer de espaldas a la cámara observando una pared llena de dibujos en papel",
       },
     },
@@ -36,7 +36,7 @@ function Projects() {
       description: t("projects.pizza.description"),
       url: "https://www.behance.net/gallery/159676859/UI-Design-practice",
       img: {
-        src: "RocketPizza.png",
+        src: "RocketPizza.webp",
         alt: "Dos teléfonos puestos opuestamente en donde en uno de ellos se ve una aplicación del pedido de comida.",
       },
     },
@@ -46,7 +46,7 @@ function Projects() {
       description: t("projects.ph.description"),
       url: "https://www.behance.net/gallery/158727003/Photography-portfolio-2022",
       img: {
-        src: "PortfolioPhotography.jpg",
+        src: "PortfolioPhotography.webp",
         alt: "Dos teléfonos puestos opuestamente en donde en uno de ellos se ve una aplicación del pedido de comida.",
       },
     },
@@ -56,7 +56,7 @@ function Projects() {
       description: t("projects.todo.description"),
       url: "https://www.behance.net/gallery/164340927/ToDo-Machine",
       img: {
-        src: "TodoMachine.png",
+        src: "TodoMachine.webp",
         alt: "Sobre un fondo blanco se ve una computadora y un teléfono móvil, en la pantalla de cada uno se observa el sitio web.",
       },
     },

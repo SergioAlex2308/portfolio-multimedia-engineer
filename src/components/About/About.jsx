@@ -18,7 +18,7 @@ function About () {
         <div className='about_photo w-3/5 tablet:w-4/12 desktop:w-3/12'>
           <img
             className='rounded-xl drop-shadow-xl'
-            src={require('../../assets/Images/Background/Profile.png')}
+            src={require('../../assets/Images/Background/Profile.webp')}
             alt='Hombre con lentes sonriendo'
           />
         </div>

@@ -44,8 +44,8 @@ module.exports = withMT({
     },
     extend: {
       backgroundImage: {
-        'photo-main-large': "url('./assets/Images/Background/photo-background.jpg')",
-        'photo-main-small': "url('./assets/Images/Background/photo-background-small.jpg')",
+        'photo-main-large': "url('./assets/Images/Background/photo-background.webp')",
+        'photo-main-small': "url('./assets/Images/Background/photo-background-small.webp')",
       },
       dropShadow: {
         '2xl': [
